@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 20:13:54 by gmalyana          #+#    #+#             */
-/*   Updated: 2025/03/24 20:15:32 by gmalyana         ###   ########.fr       */
+/*   Updated: 2025/03/26 16:22:10 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 # define WRONGCAT_HPP
 
 #include <iostream>
+#include "WrongAnimal.hpp"
 
-class WrongCat{
+class WrongCat : public WrongAnimal{
 	protected:
 		std::string type;
 	public:

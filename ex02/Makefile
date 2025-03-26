@@ -1,6 +1,6 @@
 cmd = c++
 flags = -Wall -Wextra -Werror -std=c++98
-sources = main.cpp Animal.cpp Dog.cpp Cat.cpp  Brain.cpp
+sources = main.cpp AAnimal.cpp Dog.cpp Cat.cpp Brain.cpp
 objs = $(sources:.cpp=.o)
 NAME = animal
 
@@ -9,7 +9,7 @@ all: $(NAME)
 $(NAME): $(objs) 
 	$(cmd) $(flags) $(objs) -o $(NAME)
 
-%.o: %.cpp Animal.hpp Dog.hpp Cat.hpp  Brain.hpp
+%.o: %.cpp AAnimal.hpp Dog.hpp Cat.hpp Brain.hpp
 	$(cmd) $(flags) -c $< -o $@
 
 clean:

@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 20:13:51 by gmalyana          #+#    #+#             */
-/*   Updated: 2025/03/24 20:17:14 by gmalyana         ###   ########.fr       */
+/*   Updated: 2025/03/26 16:01:51 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ WrongCat &WrongCat::operator=(const WrongCat &other){
 		this->type = other.getType();
 	return *this;
 }
-~WrongCat::WrongCat(){
+WrongCat::~WrongCat(){
 	std::cout << "WrongCat destructor called" << std::endl;
 }
 void WrongCat::makeSound() const{
